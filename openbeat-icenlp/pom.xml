@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>is.ru.openbeat</groupId>
+        <artifactId>openbeat</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>openbeat-icenlp</artifactId>
+    <name>openbeat (icenlp)</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.atunit</groupId>
+            <artifactId>atunit-guice</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.atunit</groupId>
+            <artifactId>atunit-mockito</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>is.ru.openbeat</groupId>
+            <artifactId>openbeat-discourse</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>is.ru.cs.nlp</groupId>
+            <artifactId>icenlp</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>is.knowledge</groupId>
+            <artifactId>lemmatizer</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+</project>

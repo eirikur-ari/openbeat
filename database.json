@@ -1,0 +1,114 @@
+{
+    "types": [{
+        "name": "professional",
+        "klass": "person",
+        "features": [{
+            "name": "role",
+            "typical": "real",
+            "type": "SYM"
+        },{
+            "name": "age",
+            "typical": "65",
+            "type": "NUM"
+        }]
+    },{
+        "name": "teacher",
+        "klass": "personality",
+        "features": [{
+            "name": "role",
+            "typical": "real",
+            "type": "SYM"
+        },{
+            "name": "age",
+            "typical": "45",
+            "type": "NUM"
+        }]
+    }],
+
+    "instances": [{
+        "instanceOf": "Stairs",
+        "id": "Stairs1",
+        "attributes": {
+           "shape": "Spiral"
+       }},{
+        "instanceOf": "Shader",
+        "id": "Texture1",
+        "attributes": {
+           "type": "Texture",
+           "bits": "16"
+       }},{
+        "instanceOf": "Container",
+        "id": "Box1",
+        "attributes": {
+           "type": "Box",
+           "shape": "Square",
+           "contents": "Chocolates"
+       }},{
+        "instanceOf": "professional",
+        "id": "Punk1",
+        "attributes": {
+           "role": "Actor",
+           "type": "Virtual",
+           "age": "25",
+           "hype": "Popular"
+       }},{
+        "instanceOf": "Home",
+        "id": "House1",
+        "attributes": {
+           "size": "Large",
+           "type": "House"
+       }},{
+        "instanceOf": "Conference",
+        "id": "Siggraph1",
+        "attributes": {
+           "name": "Siggraph",
+           "distance": "Here",
+           "year": "2001"
+       }},{
+        "instanceOf": "Auto",
+        "id": "Truck1",
+        "attributes": {
+           "type": "Truck",
+           "color": "Blue"
+       }},{
+        "instanceOf": "Sign",
+        "id": "Wgnl",
+        "attributes": {
+           "name": "W.G.N.L.",
+           "label": "Wgnl"
+       }    }],
+
+    "scenes": [{
+        "id": "MIT",
+        "objects": ["ML1", "Truck1", "Alan1"]
+    },{
+        "id": "Local",
+        "objects": ["House1", "Texture1"]
+    }],
+
+    "gestures": [{
+        "type": "iconic",
+        "value": "square",
+        "arms": [{
+            "handshape": "box",
+            "trajectory": "box",
+            "type": "RIGHT"
+        },{
+            "handshape": "box",
+            "trajectory": "box",
+            "type": "LEFT"
+        }]
+    },{
+         "type": "metamorphic",
+         "value": "optimized",
+         "arms": [{
+            "handshape": "virtual",
+            "trajectory": "virtual",
+            "type": "RIGHT"
+        },{
+            "handshape": "virtual",
+            "trajectory": "virtual",
+            "type": "LEFT"
+        }]
+    }]
+ }

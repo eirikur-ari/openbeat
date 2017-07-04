@@ -1,0 +1,35 @@
+[MODE = one|all|fill]  
+[one=analyze the input file and return the one most frequent tag for each word]
+[all=analyze the input file and return all tags for each word]
+[fill=fill in missing tags in the input file (dictionary)]
+MODE=fill
+
+[The name of the dictionary for which additional tags should be generated]
+INPUT_FILE=c:/gogn/sheffield/Java/IceTagger/Dict/otb/01TM.dict
+
+[The name of the output dictionary]
+OUTPUT_FILE=c:/gogn/sheffield/Java/Ngrams/models/01TM.filled.dict
+
+[LOG_FILE is either a file name or empty if no log (debug info) is desired]
+LOG_FILE=
+
+[The main dictionary]
+DICT=c:/gogn/sheffield/Java/IceTagger/Dict/otb/01TM.dict
+
+[Main dictionary of endings and corresponding tags. Should not be changed.]
+ENDINGS_MAIN_DICT=c:/gogn/sheffield/Java/IceTagger/Dict/endingsMain.dict
+
+[Dictionary of endings and corresponding tags]
+ENDINGS_DICT=c:/gogn/sheffield/Java/IceTagger/Dict/otb/01TM.endings.dict
+
+[Dictionary of endings for proper names and corresponding tags]
+ENDINGS_PROPER_DICT=c:/gogn/sheffield/Java/IceTagger/Dict/otb/01TM.endingsProper.dict
+
+[The prefixes dictionary
+PREFIXES_DICT=c:/gogn/sheffield/Java/IceTagger/Dict/prefixes.dict
+
+[Tag frequency file]
+TAG_FREQUENCY_FILE=c:/gogn/sheffield/Java/IceTagger/Dict/otbTags.freq.dict
+
+[SEPARATOR = space|equal. Controls the character between the word and its tags]
+SEPARATOR=space

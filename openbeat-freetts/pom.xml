@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>is.ru.openbeat</groupId>
+        <artifactId>openbeat</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>openbeat-freetts</artifactId>
+    <name>openbeat (freetts)</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.atunit</groupId>
+            <artifactId>atunit-guice</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>is.ru.openbeat</groupId>
+            <artifactId>openbeat-core</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice-multibindings</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>freetts</groupId>
+            <artifactId>freetts</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>freetts</groupId>
+            <artifactId>en_us</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>freetts</groupId>
+            <artifactId>jsapi10</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>freetts</groupId>
+            <artifactId>cmu_us_kal</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>freetts</groupId>
+            <artifactId>cmulex</artifactId>
+        </dependency>
+    </dependencies>
+</project>

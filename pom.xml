@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>is.ru.openbeat</groupId>
+    <artifactId>openbeat</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>openbeat (builder)</name>
+    <description>Aggregate builder project for openbeat.</description>
+    <url>http://cadia.ru.is/openbeat</url>
+
+    <modules>
+        <module>openbeat-core</module>
+        <module>openbeat-icenlp</module>
+        <module>openbeat-opennlp</module>
+        <module>openbeat-discourse</module>
+        <module>openbeat-knowledgebase</module>
+        <module>openbeat-wordnet</module>
+        <module>openbeat-behavior</module>
+        <module>openbeat-freetts</module>
+        <module>openbeat-bml</module>
+        <module>openbeat-mcneill</module>
+        <module>openbeat-bmlrealizer</module>
+        <module>openbeat-dist</module>
+    </modules>
+
+    <developers>
+        <developer>
+            <id>arni</id>
+            <name>Árni Hermann Reynisson</name>
+            <email>arnir06@ru.is</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>eiki</id>
+            <name>Eiríkur Ari Pétursson</name>
+            <email>eirikurp06@ru.is</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>gulli</id>
+            <name>Guðleifur Kristjánsson</name>
+            <email>gudleifur05@ru.is</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <properties>
+        <atunit.version>1.0.1</atunit.version>
+        <freetts.version>1.2.2</freetts.version>
+        <guice.version>2.0-SNAPSHOT</guice.version>
+        <slf4j.version>1.5.6</slf4j.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Testing -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.5</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-all</artifactId>
+                <version>1.1</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.atunit</groupId>
+                <artifactId>atunit-guice</artifactId>
+                <version>${atunit.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.code.guice</groupId>
+                        <artifactId>guice</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.code.google-collections</groupId>
+                        <artifactId>google-collect</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.atunit</groupId>
+                <artifactId>atunit-mockito</artifactId>
+                <version>${atunit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>1.7</version>
+            </dependency>
+
+            <!-- Logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <!-- Google Guice -->
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice-core</artifactId>
+                <version>${guice.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice-multibindings</artifactId>
+                <version>${guice.version}</version>
+            </dependency>
+
+            <!-- Google Collections -->
+            <dependency>
+                <groupId>com.google.collections</groupId>
+                <artifactId>google-collections</artifactId>
+                <version>0.8</version>
+            </dependency>
+
+            <!-- GSON -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>1.3</version>
+            </dependency>
+
+            <!-- YAML -->
+            <dependency>
+                <groupId>SnakeYAML</groupId>
+                <artifactId>SnakeYAML</artifactId>
+                <version>1.2</version>
+            </dependency>
+
+            <!-- MIT WordNet-->
+            <dependency>
+                <groupId>edu.mit</groupId>
+                <artifactId>jwi</artifactId>
+                <version>2.1.5</version>
+            </dependency>
+
+            <!-- FreeTTS -->
+            <dependency>
+                <groupId>freetts</groupId>
+                <artifactId>freetts</artifactId>
+                <version>${freetts.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>freetts</groupId>
+                <artifactId>en_us</artifactId>
+                <version>${freetts.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>freetts</groupId>
+                <artifactId>jsapi10</artifactId>
+                <version>${freetts.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>freetts</groupId>
+                <artifactId>cmu_us_kal</artifactId>
+                <version>${freetts.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>freetts</groupId>
+                <artifactId>cmulex</artifactId>
+                <version>${freetts.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <minmemory>128m</minmemory>
+                    <maxmemory>256m</maxmemory>
+                    <quiet>true</quiet>
+                    <aggregate>true</aggregate>                    
+                </configuration>
+            </plugin>
+            <!-- <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+            </plugin> -->
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.0-SNAPSHOT</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <repositories>
+        <repository>
+            <id>Guice Snapshot</id>
+            <url>http://hvergi.net/~arni/m2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>GSON</id>
+            <url>http://google-gson.googlecode.com/svn/mavenrepo</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>snakeyaml</id>
+            <url>http://snakeyamlrepo.appspot.com/repository</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Codehaus</id>
+            <url>http://repository.codehaus.org</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Codehaus Snapshot</id>
+            <url>http://snapshots.repository.codehaus.org</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

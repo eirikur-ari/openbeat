@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>openbeat (discourse) - FindBugs Bug Detector Report</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            openbeat (discourse)
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-05-20
+                      </div>
+            <div class="xright">            <a href="../../../../home/arnihermann/Documents/RU/openbeat/openbeat/../../openbeat/openbeat-discourse">openbeat (discourse)</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                             <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+            
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+              <strong>FindBugs Report</strong>
+        </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>FindBugs Bug Detector Report</h2>
+<p>The following document contains the results of <a class="externalLink" href="http://findbugs.sourceforge.net">FindBugs Report</a></p>
+<p>FindBugs Version is <i>1.3.7</i></p>
+<p>Threshold is <i>Low</i></p>
+<p>Effort is <i>Default</i></p>
+</div>
+<div class="section"><h2>Summary</h2>
+<table class="bodyTable"><tr class="a"><th>Classes</th>
+<th>Bugs</th>
+<th>Errors</th>
+<th>Missing Classes</th>
+</tr>
+<tr class="b"><td>89</td>
+<td>29</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+</div>
+<div class="section"><h2>Files</h2>
+<table class="bodyTable"><tr class="a"><th>Class</th>
+<th>Bugs</th>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.discourse.ContrastBuilder">is.ru.openbeat.discourse.ContrastBuilder</a></td>
+<td>4</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.discourse.DiscourseCompiler">is.ru.openbeat.discourse.DiscourseCompiler</a></td>
+<td>7</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.discourse.DiscourseTagger">is.ru.openbeat.discourse.DiscourseTagger</a></td>
+<td>6</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.discourse.InformationStructureBuilder">is.ru.openbeat.discourse.InformationStructureBuilder</a></td>
+<td>5</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.discourse.NounPhraseIdentifier">is.ru.openbeat.discourse.NounPhraseIdentifier</a></td>
+<td>3</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.discourse.VerbPhraseIdentifier">is.ru.openbeat.discourse.VerbPhraseIdentifier</a></td>
+<td>4</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.discourse.ContrastBuilder"></a><div class="section"><h3>is.ru.openbeat.discourse.ContrastBuilder</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.ContrastBuilder.collectConstituent(Map, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>116-119</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.ContrastBuilder.collectWord(Map, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>107-112</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.ContrastBuilder.procudeConstituent(Map, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>136-139</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.ContrastBuilder.produceWord(Map, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>124-132</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.discourse.DiscourseCompiler"></a><div class="section"><h3>is.ru.openbeat.discourse.DiscourseCompiler</h3>
+<table class="bodyTable"><tr class="a"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="b"><td>Method is.ru.openbeat.discourse.DiscourseCompiler.spaceFor(Integer) concatenates strings using + in a loop</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#SBSC_USE_STRINGBUFFER_CONCATENATION">SBSC_USE_STRINGBUFFER_CONCATENATION</a></td>
+<td>156</td>
+<td>Medium</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.DiscourseCompiler.handleConstituent(Integer, StringBuilder, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>137-143</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.DiscourseCompiler.handleNounPhrase(Integer, StringBuilder, NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>117-123</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.DiscourseCompiler.handleRheme(StringBuilder, Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>99-104</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.DiscourseCompiler.handleTheme(StringBuilder, Theme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>108-113</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.DiscourseCompiler.handleVerbPhrase(Integer, StringBuilder, VerbPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>127-133</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.DiscourseCompiler.handleWord(Integer, StringBuilder, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>147-151</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.discourse.DiscourseTagger"></a><div class="section"><h3>is.ru.openbeat.discourse.DiscourseTagger</h3>
+<table class="bodyTable"><tr class="a"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="b"><td>Use of non-localized String.toUpperCase() or String.toLowerCase</td>
+<td>I18N</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_CONVERT_CASE">DM_CONVERT_CASE</a></td>
+<td>202</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.DiscourseTagger.handleAdjective(Constituent, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>98-133</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.DiscourseTagger.handleConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>195-198</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.DiscourseTagger.handleNounPhrase(NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>186-191</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.DiscourseTagger.handleNounPhraseConstituent(NounPhrase, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>179-182</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.DiscourseTagger.handleNounPhraseWord(NounPhrase, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>143-175</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.discourse.InformationStructureBuilder"></a><div class="section"><h3>is.ru.openbeat.discourse.InformationStructureBuilder</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Redundant nullcheck of is.ru.openbeat.discourse.InformationStructureBuilder.verb which is known to be null in is.ru.openbeat.discourse.InformationStructureBuilder.buildInformationStructure(Iterable)</td>
+<td>STYLE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE">RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE</a></td>
+<td>111</td>
+<td>Medium</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.InformationStructureBuilder.handleConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>189-192</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.InformationStructureBuilder.handleNounPhrase(NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>196-205</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.InformationStructureBuilder.handleVerbPhrase(VerbPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>214-224</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.InformationStructureBuilder.handleWord(Constituent, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>234-235</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.discourse.NounPhraseIdentifier"></a><div class="section"><h3>is.ru.openbeat.discourse.NounPhraseIdentifier</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.NounPhraseIdentifier.handleConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>96-99</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.NounPhraseIdentifier.handleNounPhrase(NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>103-116</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.NounPhraseIdentifier.handleWord(List, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>120-122</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.discourse.VerbPhraseIdentifier"></a><div class="section"><h3>is.ru.openbeat.discourse.VerbPhraseIdentifier</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Use of non-localized String.toUpperCase() or String.toLowerCase</td>
+<td>I18N</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_CONVERT_CASE">DM_CONVERT_CASE</a></td>
+<td>113</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.VerbPhraseIdentifier.handleConstituents(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>92-95</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.discourse.VerbPhraseIdentifier.handleVerbPhrase(VerbPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>99-102</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.discourse.VerbPhraseIdentifier.handleWord(VerbPhrase, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>112-123</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2009
+    
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

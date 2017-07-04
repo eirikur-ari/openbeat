@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>openbeat (behavior) - FindBugs Bug Detector Report</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            openbeat (behavior)
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-05-20
+                      </div>
+            <div class="xright">            <a href="../../../../home/arnihermann/Documents/RU/openbeat/openbeat/../../openbeat/openbeat-behavior">openbeat (behavior)</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                             <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+            
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+              <strong>FindBugs Report</strong>
+        </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>FindBugs Bug Detector Report</h2>
+<p>The following document contains the results of <a class="externalLink" href="http://findbugs.sourceforge.net">FindBugs Report</a></p>
+<p>FindBugs Version is <i>1.3.7</i></p>
+<p>Threshold is <i>Low</i></p>
+<p>Effort is <i>Default</i></p>
+</div>
+<div class="section"><h2>Summary</h2>
+<table class="bodyTable"><tr class="a"><th>Classes</th>
+<th>Bugs</th>
+<th>Errors</th>
+<th>Missing Classes</th>
+</tr>
+<tr class="b"><td>123</td>
+<td>36</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+</div>
+<div class="section"><h2>Files</h2>
+<table class="bodyTable"><tr class="a"><th>Class</th>
+<th>Bugs</th>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.filter.ConflictFilter">is.ru.openbeat.filter.ConflictFilter</a></td>
+<td>4</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.generator.BeatGenerator">is.ru.openbeat.generator.BeatGenerator</a></td>
+<td>3</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.generator.ContrastGestureGenerator">is.ru.openbeat.generator.ContrastGestureGenerator</a></td>
+<td>2</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.generator.DeicticGestureGenerator">is.ru.openbeat.generator.DeicticGestureGenerator</a></td>
+<td>4</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.generator.EyebrowsBehaviorGenerator">is.ru.openbeat.generator.EyebrowsBehaviorGenerator</a></td>
+<td>4</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.generator.GazeBehaviorGenerator">is.ru.openbeat.generator.GazeBehaviorGenerator</a></td>
+<td>2</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.generator.HeadnodBehaviorGenerator">is.ru.openbeat.generator.HeadnodBehaviorGenerator</a></td>
+<td>3</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.generator.IconicBehaviorGenerator">is.ru.openbeat.generator.IconicBehaviorGenerator</a></td>
+<td>7</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.generator.IntonationAccentBehaviorGenerator">is.ru.openbeat.generator.IntonationAccentBehaviorGenerator</a></td>
+<td>3</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.generator.IntonationToneBehaviorGenerator">is.ru.openbeat.generator.IntonationToneBehaviorGenerator</a></td>
+<td>2</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.generator.PunctuationBehaviorGenerator">is.ru.openbeat.generator.PunctuationBehaviorGenerator</a></td>
+<td>2</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.filter.ConflictFilter"></a><div class="section"><h3>is.ru.openbeat.filter.ConflictFilter</h3>
+<table class="bodyTable"><tr class="a"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.filter.ConflictFilter.handleConstituent(List, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>117-123</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.filter.ConflictFilter.handleRheme(List, Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>107-113</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.filter.ConflictFilter.handleTheme(List, Theme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>97-103</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.filter.ConflictFilter.handleWord(List, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>127-130</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.BeatGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.BeatGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.BeatGenerator.handleConstituent(Rheme, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>94-98</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.BeatGenerator.handleRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>86-90</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.BeatGenerator.handleWord(Rheme, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>101-106</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.ContrastGestureGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.ContrastGestureGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.ContrastGestureGenerator.handleConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>99-103</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.ContrastGestureGenerator.handleWord(Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>107-123</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.DeicticGestureGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.DeicticGestureGenerator</h3>
+<table class="bodyTable"><tr class="a"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.DeicticGestureGenerator.handleConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>98-101</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.DeicticGestureGenerator.handleNounPhrase(NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>105-112</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.DeicticGestureGenerator.handleRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>91-94</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.DeicticGestureGenerator.handleWord(NounPhrase, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>116-126</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.EyebrowsBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.EyebrowsBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.EyebrowsBehaviorGenerator.handleConstituent(NounPhrase, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>99-102</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.EyebrowsBehaviorGenerator.handleNounPhrase(NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>106-109</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.EyebrowsBehaviorGenerator.handleRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>113-116</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.EyebrowsBehaviorGenerator.handleWord(NounPhrase, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>91-95</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.GazeBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.GazeBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="a"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.GazeBehaviorGenerator.generateGaze(Rheme, Boolean, Boolean) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>107-115</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.GazeBehaviorGenerator.generateGaze(Theme, Boolean, Boolean) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>99-103</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.HeadnodBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.HeadnodBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.HeadnodBehaviorGenerator.handleConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>99-102</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.HeadnodBehaviorGenerator.handleRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>106-109</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.HeadnodBehaviorGenerator.handleWord(Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>91-95</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.IconicBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.IconicBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.collectConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>125-132</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.collectRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>113-120</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.collectWord(Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>137-141</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.produceConstituent(Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>154-158</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.produceNounPhrase(NounPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>166-185</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.produceRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>146-150</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IconicBehaviorGenerator.produceVerbPhrase(VerbPhrase) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>193-203</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.IntonationAccentBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.IntonationAccentBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IntonationAccentBehaviorGenerator.handleConstituent(IArticulation, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>102-105</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.IntonationAccentBehaviorGenerator.handleWordinRheme(Rheme, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>117-121</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IntonationAccentBehaviorGenerator.handleWordinTheme(Theme, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>109-113</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.IntonationToneBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.IntonationToneBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.IntonationToneBehaviorGenerator.handleRheme(Rheme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>90-92</td>
+<td>Low</td>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.IntonationToneBehaviorGenerator.handleTheme(Theme) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>84-86</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.generator.PunctuationBehaviorGenerator"></a><div class="section"><h3>is.ru.openbeat.generator.PunctuationBehaviorGenerator</h3>
+<table class="bodyTable"><tr class="a"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="b"><td>Private method is.ru.openbeat.generator.PunctuationBehaviorGenerator.handleConstituent(Clause, Constituent) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>87-91</td>
+<td>Low</td>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.generator.PunctuationBehaviorGenerator.handleWord(Clause, Word) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>95-99</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2009
+    
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

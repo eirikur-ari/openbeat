@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>openbeat (opennlp) - FindBugs Bug Detector Report</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            openbeat (opennlp)
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-05-20
+                      </div>
+            <div class="xright">            <a href="../../../../home/arnihermann/Documents/RU/openbeat/openbeat/../../openbeat/openbeat-opennlp">openbeat (opennlp)</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                             <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+            
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+              <strong>FindBugs Report</strong>
+        </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>FindBugs Bug Detector Report</h2>
+<p>The following document contains the results of <a class="externalLink" href="http://findbugs.sourceforge.net">FindBugs Report</a></p>
+<p>FindBugs Version is <i>1.3.7</i></p>
+<p>Threshold is <i>Low</i></p>
+<p>Effort is <i>Default</i></p>
+</div>
+<div class="section"><h2>Summary</h2>
+<table class="bodyTable"><tr class="a"><th>Classes</th>
+<th>Bugs</th>
+<th>Errors</th>
+<th>Missing Classes</th>
+</tr>
+<tr class="b"><td>113</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+</div>
+<div class="section"><h2>Files</h2>
+<table class="bodyTable"><tr class="a"><th>Class</th>
+<th>Bugs</th>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.opennlp.OpenNlpModule">is.ru.openbeat.opennlp.OpenNlpModule</a></td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.opennlp.OpenNlpModule$1">is.ru.openbeat.opennlp.OpenNlpModule$1</a></td>
+<td>1</td>
+</tr>
+<tr class="b"><td><a href="#is.ru.openbeat.opennlp.OpenNlpSource">is.ru.openbeat.opennlp.OpenNlpSource</a></td>
+<td>1</td>
+</tr>
+<tr class="a"><td><a href="#is.ru.openbeat.opennlp.OpenNlpSource$1">is.ru.openbeat.opennlp.OpenNlpSource$1</a></td>
+<td>1</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.opennlp.OpenNlpModule"></a><div class="section"><h3>is.ru.openbeat.opennlp.OpenNlpModule</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Private method is.ru.openbeat.opennlp.OpenNlpModule.fromClasspath(String) is never called</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#UPM_UNCALLED_PRIVATE_METHOD">UPM_UNCALLED_PRIVATE_METHOD</a></td>
+<td>142</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.opennlp.OpenNlpModule1"></a><div class="section"><h3>is.ru.openbeat.opennlp.OpenNlpModule$1</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>The class is.ru.openbeat.opennlp.OpenNlpModule$1 could be refactored into a named _static_ inner class</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#SIC_INNER_SHOULD_BE_STATIC_ANON">SIC_INNER_SHOULD_BE_STATIC_ANON</a></td>
+<td>84-87</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.opennlp.OpenNlpSource"></a><div class="section"><h3>is.ru.openbeat.opennlp.OpenNlpSource</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>Self comparison of lastChunkTag with itself is.ru.openbeat.opennlp.OpenNlpSource.process(String)</td>
+<td>CORRECTNESS</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#SA_LOCAL_SELF_COMPARISON">SA_LOCAL_SELF_COMPARISON</a></td>
+<td>135</td>
+<td>Medium</td>
+</tr>
+</table>
+</div>
+<a name="is.ru.openbeat.opennlp.OpenNlpSource1"></a><div class="section"><h3>is.ru.openbeat.opennlp.OpenNlpSource$1</h3>
+<table class="bodyTable"><tr class="b"><th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th>
+</tr>
+<tr class="a"><td>The class is.ru.openbeat.opennlp.OpenNlpSource$1 could be refactored into a named _static_ inner class</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#SIC_INNER_SHOULD_BE_STATIC_ANON">SIC_INNER_SHOULD_BE_STATIC_ANON</a></td>
+<td>213-216</td>
+<td>Low</td>
+</tr>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2009
+    
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

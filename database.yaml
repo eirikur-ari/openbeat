@@ -1,0 +1,93 @@
+types:
+- klass: person
+  name: professional
+  features:
+  - name: role
+    type: SYM
+    typical: real
+  - name: age
+    type: NUM
+    typical: 65
+- klass: personality
+  name: teacher
+  features:
+  - name: role
+    type: SYM
+    typical: real
+  - name: age
+    type: NUM
+    typical: 45
+- klass: vehicle
+  name: auto
+  features:
+  - name: role
+    type: SYM
+    typical: color
+
+instances:
+- id: Stairs1
+  instanceOf: Stairs
+  attributes:
+    shape: Spiral
+- id: Texture1
+  instanceOf: Shader
+  attributes:
+    type: Texture
+    bits: 16
+- id: Box1
+  instanceOf: Container
+  attributes:
+    type: Box
+    shape: Square
+    contents: Chocolates
+- id: Punk1
+  instanceOf: professional
+  attributes:
+    role: Actor
+    type: Virtual
+    age: 25
+    hype: Popular
+- id: House1
+  instanceOf: Home
+  attributes:
+    size: Large
+    type: House
+- id: Siggraph1
+  instanceOf: Conference
+  attributes:
+    name: Siggraph
+    distance: Here
+    year: 2001
+- id: Truck1
+  instanceOf: Auto
+  attributes:
+    type: Truck
+    color: Blue
+- id: Wgnl
+  instanceOf: Sign
+  attributes:
+    name: W.G.N.L.
+    label: Wgnl
+- id: viewer1
+  instanceOf: auto
+  attributes:
+    role: viewer
+    type: red
+
+scenes:
+- id: Presentation K-5
+  objects:
+  - viewer1
+  persons:
+  - id: Rob
+    role: PARTICIPANT
+  - id: SuperHumanoid
+    role: PARTICIPANT
+
+gestures:
+- type: iconic
+  value: GONE
+  arms:
+  - handshape: why
+    trajectory: why
+    type: RIGHT

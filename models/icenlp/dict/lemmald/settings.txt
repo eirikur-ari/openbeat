@@ -1,0 +1,11 @@
+# Settings for Lemmald
+iceNLPFolder=icenlp/
+ruleDatabase=../../dict/lemmald/rule_database_utf8.dat
+postfixRules=../../dict/lemmald/postfixRules.txt
+systemOut=off
+# Switches
+compoundAnalysis=on
+longestMatch=on
+umlautSubstitution=on
+postFixer=on
+bin=off
